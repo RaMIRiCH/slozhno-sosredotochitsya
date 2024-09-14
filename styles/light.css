@@ -56,7 +56,7 @@
     background-color: var(--accent-color-light);
   }
 
-  .decorated-zone::before{
+  .decorated-zone::before {
     border-inline-end: 1px solid var(--text-color-light);
     border-block-start: 1px solid var(--text-color-light);
   }
