@@ -3,10 +3,85 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
+@media (prefers-color-scheme: light) {
+  .page {
+    background-image: url(../images/cover-image-light.png);
+    background-color: var(--bg-color-light);
+  }
 
-.page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+   .header__title {
+    color: var(--main-color-light)
+  }
+
+  .header__description {
+    background-color: var(--accent-color-light);
+  }
+
+  header__theme-menu-item {
+    color: var(--text-color-light);
+  }
+
+  .header__theme-menu-button_active {
+    border: 1px solid var(--text-color-light);
+  }
+
+  .header__theme-menu-button:hover {
+    outline: 1px solid #32312de5 ;
+  }
+
+  .title {
+    color: var(--text-color-light);
+  }
+  
+  h2, .description__text {
+    color: var(--text-color-light);
+  }
+
+  .link {
+    text-shadow: 1px 2px 0px var(--accent-color-light);
+  }
+
+  .link:focus-visible {
+    outline: 1px solid var(--text-color-light);
+  }
+
+  .link:hover {
+    border-bottom: 1px solid var(--text-color-light);
+  }
+
+  .how__description,
+  .what__description,
+  .why__description,
+  .content__img__desc {
+    background-color: var(--accent-color-light);
+  }
+
+  .decorated-zone::before{
+    border-inline-end: 1px solid var(--text-color-light);
+    border-block-start: 1px solid var(--text-color-light);
+  }
+
+  .decorated-zone::after {
+    border-inline-start: 1px solid var(--text-color-light);
+    border-block-end: 1px solid var(--text-color-light);
+  }
+
+  .footer::before {
+    border-inline-end: 1px solid var(--text-color-light);
+    border-block-start: 1px solid var(--text-color-light);
+  }
+
+  .footer::after {
+    border-inline-start: 1px solid var(--text-color-light);
+    border-block-end: 1px solid var(--text-color-light);
+  }
+
+  .rec {
+    visibility: hidden;
+  }
+
+  .footer__title {
+    color: var(--main-color-light);
+  }
 }
+
