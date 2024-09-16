@@ -1,8 +1,4 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
+
 .page.theme_dark {
   background-image: url(../images/cover-image-dark.png);
   background-color: var(--bg-color);
@@ -25,7 +21,7 @@
 }
 
 .page.theme_dark .header__theme-menu-button:hover {
-  outline: 1px solid var(--accent-color) ;
+  outline: 1px solid rgba(255, 0, 112, 0.40) ;
 }
 
 .page.theme_dark .title {
@@ -41,11 +37,11 @@
 }
 
 .page.theme_dark .link:focus-visible {
-  outline: 1px solid var(--accent-color);
+  outline: 1px solid var(--text-color);
 }
 
 .page.theme_dark .link:hover {
-  border-bottom: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--text-color);
 }
 
 .page.theme_dark
@@ -87,10 +83,4 @@
 .page.theme_dark .footer__title {
   color: var(--main-color);
 }
-  
- 
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
 
