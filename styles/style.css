@@ -23,6 +23,8 @@
   border-bottom: 1px solid var(--text-color);
 }
 
+/*размер в хедер отп.*/
+
 .decorated-zone {
   position: relative;
 }
@@ -277,6 +279,7 @@
 
 .footer {
   margin-block-start: 80px;
+  /* минус 20 пикселей по бокам=728пикс. спросить у наставника*/
   min-height: 728px;
   position: relative;
   display: flex;
