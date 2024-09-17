@@ -12,7 +12,7 @@
   background-color: var(--accent-color);
 }
 
-.page.theme_dark .header__theme-menu-item {
+.page.theme_dark .header__theme-menu-button {
   color: var(--accent-color);
 }
 
@@ -44,9 +44,12 @@
   border-bottom: 1px solid var(--text-color);
 }
 
-.page.theme_dark
-.description,
-.content__img__desc {
+.page.theme_dark .description {
+  background-color: var(--accent-color);
+  color: var(--bg-color);
+}
+
+.page.theme_dark .title__img {
   background-color: var(--accent-color);
   color: var(--bg-color);
 }

@@ -25,7 +25,6 @@
 
 .decorated-zone {
   position: relative;
-  min-height: 728px;
 }
 
 .decorated-zone::before {
@@ -42,7 +41,7 @@
 .decorated-zone::after {
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   left: 0;
   border-inline-start: 1px solid var(--accent-color);
   border-block-end: 1px solid var(--accent-color);
@@ -53,6 +52,7 @@
 .header {
   display: flex;
   flex-direction: column;
+  min-height: 728px;
 }
 
 .header__theme-menu-list {
@@ -101,7 +101,7 @@
 .header__description {
   margin-block-start: 11.2%;
   margin-inline-start: 50%;
-  justify-self: end;
+  width: 50%;
   align-self: center;
   font-family: "IBM Plex Mono", Arial, sans-serif;
   font-size: 18px;
@@ -226,13 +226,16 @@
   line-height: 23.4px;
 }
 
-.content__img__desc {
+.title__img {
   font-family: "IBM Plex Mono", Arial, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: 23.4px;
   margin-block-end: 20px;
+  width: 100%;
+  background-color: var(--accent-color);
+  color: var(--bg-color);
 }
 
 .pictures {
@@ -297,7 +300,7 @@
 .footer::after {
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   left: 0;
   border-inline-start: 1px solid var(--accent-color);
   border-block-end: 1px solid var(--accent-color);
@@ -315,6 +318,10 @@
 
 @media (width <= 768px) {
 
+  .header {
+    min-height: 985px;
+  }
+
   .header__theme-menu-list {
     display: flex;
     flex-direction: column;
@@ -330,11 +337,6 @@
   .header__description {
     margin-block-start: 22.4%;
     margin-inline-start: 50%;
-    padding-right: 60px;
-  }
-
-  .decorated-zone {
-    min-height: 985px;
   }
 
   .what__title {
@@ -381,9 +383,10 @@
     margin-block-start: 15%;
     margin-inline-start: 0;
     padding-right: 40px;
+    width: 100%;
   }
 
-  .decorated-zone {
+  .header {
     min-height: 648px;
   }
 
@@ -414,25 +417,36 @@
     margin: 50px 0 50px;
   }
 
-  .title,
-  .card,
+  .title {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
   .how__description__smart {
     width: 100%;
     margin-bottom: 20px;
   }
 
-  .content__img__desc {
+  .title__img {
     margin-bottom: 10px;
   }
 
   .pictures {
     display: block;
-    margin: 10px 0;
     width: 100%;
   }
 
+  .pictures__item {
+    margin-bottom: 6px;
+  }
+
   .footer {
-    margin-top: 70px;
+    margin-top: 40px;
     min-height: 648px;
   }
 }
