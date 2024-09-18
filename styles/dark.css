@@ -44,12 +44,7 @@
   border-bottom: 1px solid var(--text-color);
 }
 
-.page.theme_dark .description {
-  background-color: var(--accent-color);
-  color: var(--bg-color);
-}
-
-.page.theme_dark .title__img {
+.page.theme_dark .decor {
   background-color: var(--accent-color);
   color: var(--bg-color);
 }
@@ -86,4 +81,3 @@
 .page.theme_dark .footer__title {
   color: var(--main-color);
 }
-

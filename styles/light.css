@@ -48,7 +48,7 @@
   border-bottom: 1px solid var(--text-color-light);
 }
 
-.page.theme_light .description, .title__img{
+.page.theme_light .decor{
   background-color: var(--accent-color-light);
 }
 
@@ -126,7 +126,7 @@
     border-bottom: 1px solid var(--text-color-light);
   }
 
-  .description, .title__img{
+  .decor{
     background-color: var(--accent-color-light);
   }
 
@@ -158,4 +158,3 @@
     color: var(--main-color-light);
   }
 }
-
