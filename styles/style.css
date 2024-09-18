@@ -376,7 +376,7 @@
   .header__theme-menu-list {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 13.5px;
     text-align: end;
     margin-top: 19%;
     margin: 0;
@@ -497,6 +497,7 @@
 
   .footer__title {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    margin-top: 10px;
   }
 }
 
