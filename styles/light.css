@@ -48,7 +48,7 @@
   border-bottom: 1px solid var(--text-color-light);
 }
 
-.page.theme_light .decor{
+.page.theme_light .decor {
   background-color: var(--accent-color-light);
 }
 
@@ -126,7 +126,7 @@
     border-bottom: 1px solid var(--text-color-light);
   }
 
-  .decor{
+  .decor {
     background-color: var(--accent-color-light);
   }
 
